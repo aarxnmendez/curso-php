@@ -29,7 +29,7 @@ curl_close($ch);                                                  //Cerrar la se
 
 <main>
     <section>
-        <img src="<?= $data["poster_url"]; ?>" width="300" alt="Poster de <?= $data["title"]; ?>" style="border-radius: 16px;"/>
+        <img src="<?= $data["poster_url"]; ?>" width="500" alt="Poster de <?= $data["title"]; ?>" style="border-radius: 16px;"/>
     </section>
 
     <hgroup>
