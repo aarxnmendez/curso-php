@@ -28,6 +28,7 @@ curl_close($ch);                                                  //Cerrar la se
 </head>
 
 <main>
+    <h1>Proximos lanzamientos de Marvel Studios</h1>
     <section>
         <img src="<?= $data["poster_url"]; ?>" width="500" alt="Poster de <?= $data["title"]; ?>" style="border-radius: 16px;"/>
     </section>
@@ -35,7 +36,8 @@ curl_close($ch);                                                  //Cerrar la se
     <hgroup>
         <h3><?= $data["title"]; ?> se estrena en <?= $data["days_until"]; ?> días</h2>
         <p>Fecha de estreno: <?= $data["release_date"]; ?></p>
-        <p>La siguiente es: <?= $data["following_production"]["title"]; ?></p>
+        <p>Resumen: <?= $data["overview"]; ?></p>
+        <p>La siguiente es: <?= $data["following_production"]["title"]; ?>(<?= $data["following_production"]["days_until"]; ?>días)</p>
     </hgroup>
 </main>
 
