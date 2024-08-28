@@ -7,7 +7,7 @@ $ch = curl_init(API_URL);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);                   // Establece una opción para una transferencia cURL
 
 
-$result = curl_exec($ch);                                         // Si la opción CURLOPT_RETURNTRANSFER está activada, devolverá el resultado en caso de éxito, false en caso contrario
+$result = curl_exec($ch);                                         // Si la opción CURLOPT_RETURNTRANSFER está activada, devolverá el resultado en caso de exit, false en caso contrario
 
 $data = json_decode($result, true);                               // Transforma el resultado en un array asociativo
 
